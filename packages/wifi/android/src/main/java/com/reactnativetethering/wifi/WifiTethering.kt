@@ -625,7 +625,7 @@ class WifiTethering(private val context: ReactApplicationContext) {
     ADD_NOT_ALLOWED(WifiManager.STATUS_NETWORK_SUGGESTIONS_ERROR_ADD_NOT_ALLOWED, "The suggestion is not allowed on this device"),
     ADD_INVALID(WifiManager.STATUS_NETWORK_SUGGESTIONS_ERROR_ADD_INVALID, "The suggestion is invalid or incomplete"),
     REMOVE_INVALID(WifiManager.STATUS_NETWORK_SUGGESTIONS_ERROR_REMOVE_INVALID, "Unable to remove suggested networks for this app"),
-    RESTRICTED_BY_ADMIN(WifiManager.STATUS_NETWORK_SUGGESTIONS_ERROR_RESTRICTED_BY_ADMIN, "The suggestion is restricted by the device admin"),
+    //RESTRICTED_BY_ADMIN(WifiManager.STATUS_NETWORK_SUGGESTIONS_ERROR_RESTRICTED_BY_ADMIN, "The suggestion is restricted by the device admin"),
     UNKNOWN_ERROR(-1, "Unknown error");
     companion object {
       fun fromCode(code: Int): SuggestionStatus = values().find { it.code == code } ?: UNKNOWN_ERROR
